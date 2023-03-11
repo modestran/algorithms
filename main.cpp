@@ -1,5 +1,10 @@
 #include <iostream>
 
 int main(int, char**) {
-    std::cout << "Hello, world!\n";
+    int a = 10;
+
+    printf("123\n");
+    std::cout << "Hello\n";
+    
+    return 0;
 }
