@@ -1,22 +1,21 @@
+// Binary search
 #include <iostream>
 #include <math.h>
 
-float sort(int list[99], int item) {
+int sort(int list[99], int item) {
     int low = 0, high = 99;
 
     while (low <= high) {
-        int mid = floor((high - low)/2);
-        float temp = list[mid];
+        float mid = floor((high - low)/2);
+        int temp = list[mid];
 
-        if (temp == item) {
+        if (temp = item) {
             return mid;
         } else if (temp < item) {
             low = mid + 1;
         } else {
             high = mid - 1;
         }
-
-        std::cout << "+\n";
     }
 
     return -1;
@@ -29,8 +28,6 @@ int main() {
     std::cout << sort(arr, -2) << "\n";
     std::cout << sort(arr, 8) << "\n";
     std::cout << sort(arr, 10) << "\n";
-    std::cout << sort(arr, 5) << "\n";
-
 
     return 0;
 }
